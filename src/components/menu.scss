@@ -1,0 +1,77 @@
+@import './global.scss';
+.MenuHeader{
+     width:300px;
+    height:100vh;
+    background:black;
+    position: fixed;
+    margin-bottom: -10px;
+    right:-300px;
+    z-index: 2;
+    display:flex;
+    top:125px;
+    flex-direction:column;
+    
+    align-items: center;
+    transition: all 2s ease;
+    &.active{
+        right:0
+    }
+    ul{
+      
+        margin:0;
+        padding: 0;
+        list-style: none;
+        font-size:30px;
+        color:white;
+        width:60%;
+        li{
+            margin-top: 30px;
+            a{
+                
+                text-decoration:none;
+                color:inherit;
+                font-size: inherit;
+            }
+        }
+    }
+    .menu{
+         
+        width:100%;
+        display: flex;
+        visibility:hidden;
+        @include mobile{
+            visibility: visible;
+        }
+        
+        ul{padding:30px;
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            li{
+               margin-top:10px;
+                margin-right:20px;
+                .icons{
+                    color:rgb(25, 33, 151);
+                    font-size:40px;
+                    
+                }
+                .icons1{
+                    color:rgb(224, 125, 203);
+                    font-size:40px;
+                    
+                }
+                .icons2{
+                    color:rgb(68, 158, 231);
+                    font-size:40px;
+                    
+                }
+                .icons3{
+                    color:rgb(68, 158, 231);
+                    font-size:40px;
+                    
+                }
+            }
+        }
+       }
+}

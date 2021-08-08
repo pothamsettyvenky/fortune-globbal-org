@@ -1,0 +1,31 @@
+.gallery{
+    padding:50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    margin-left:20px;
+    margin-right: 20px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    .gallery-sub{
+        
+        z-index: 1;
+      
+        background-color:black;
+        width: 50%;
+        object-fit: contain;
+        .header1{
+            width: 100%;
+   
+    margin-bottom: -150px;
+    
+        }
+    }
+
+}

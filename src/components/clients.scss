@@ -1,0 +1,62 @@
+@import './global.scss';
+.Clinett{
+    background-image: url("./clinet.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    margin:0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @include mobile{
+        
+    }
+.Clients{
+
+
+   
+
+    background-color: rgba(0, 0, 0, 0.562);
+    
+    
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    height:100vh;
+h1{
+    font-size:50px;
+    color:cadetblue;
+}
+    .Client-Images{
+        margin:0 20px;
+        display:flex;
+        flex-direction: row;
+       justify-content: space-around;
+       @include mobile{
+           flex-direction: column;
+           height:250px;
+           padding-bottom: 10px;
+          
+       }
+       
+       
+        img{
+            margin-left: 30px;
+            height:100%;
+            width:100%;
+            object-fit: contain;
+            @include mobile{
+                height:100px;
+                margin-top: 30px;
+                
+                
+            }
+          
+           
+          
+
+        }
+            
+        }
+    } 
+}

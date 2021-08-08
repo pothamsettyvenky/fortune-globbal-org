@@ -1,0 +1,48 @@
+@import './global.scss';
+.Award{
+    background-color:white;
+    margin:0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .Awardss{
+        padding:20px 40px;
+        
+        display: flex;
+        
+        @include mobile{
+            flex-direction:column; 
+        }
+        .sub-awards{
+            padding:20px 40px;
+            background-color:burlywood;
+            height:auto;
+            flex:0.6;
+            
+            ul{
+                font-size:18px;
+                font-weight: 800px;
+                display: flex;
+                padding-top: 30px;
+                flex-direction:column;
+                justify-content:space-evenly;
+                li{
+                  padding-bottom: 10px;
+                }
+            }
+        }
+        .Images-award{
+           
+            
+           background-color:rgba(0, 0, 0, 0.767);
+            position: relative;
+            padding-top:50px;
+            flex:1;
+            img{
+               
+                height: auto;
+            width:100%;
+            object-fit: contain;
+        }
+        }
+    }
+}

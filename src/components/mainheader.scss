@@ -1,0 +1,20 @@
+
+
+.MainHeader{
+    
+    top:0;
+    background-color:blue;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:50px;
+    
+    a{
+        position: relative;
+       margin:0 20px;
+       
+        text-decoration:none;
+        color:white;
+    }
+}
